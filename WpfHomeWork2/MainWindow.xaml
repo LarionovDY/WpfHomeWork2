@@ -6,38 +6,38 @@
         xmlns:local="clr-namespace:WpfHomeWork2"
         mc:Ignorable="d"
         Title="TrueCalc2022" Height="500" Width="380">
-    <Grid>
+    <Grid Background="PapayaWhip" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Cursor="IBeam">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" MinHeight="100" MaxHeight="100"/>
-            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2.5*"/>         
         </Grid.RowDefinitions>
-        <Rectangle Grid.Row="0" Fill="#FFD1BFBF"/>
-        <TextBox Text="1234,56" Grid.Row="0" Background="#FFD1BFBF" BorderBrush="#FFD1BFBF" FontFamily="ISOCPEUR" FontSize="48" HorizontalAlignment="Right" VerticalAlignment="Bottom" IsReadOnly="True" MaxLines="2" TextWrapping="WrapWithOverflow"/>
+        <Border Grid.Row="0" Grid.Column="0"  BorderBrush="CadetBlue"  BorderThickness="4,4,4,2" />
+        <TextBox Text="1 234,567" Grid.Row="0" Background="Transparent" Foreground="Black" BorderBrush="Transparent" Padding="5" FontFamily="ISOCPEUR" FontSize="48" HorizontalAlignment="Right" VerticalAlignment="Bottom"  TextWrapping="Wrap" IsReadOnly="True" Cursor="IBeam" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
         <UniformGrid Rows="6" Columns="4" Grid.Row="1">
-            <Button  Content="%" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="C" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="CE" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="←" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="1/x" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="x²" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="√x" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="÷" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="7" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="8" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="9" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="×" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="4" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="5" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="6" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="-" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="1" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="2" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="3" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="+" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="+/-" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="0" Background="LightGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="," Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
-            <Button  Content="=" Background="DarkGray" Foreground="Black" BorderBrush="Gray" Padding="10" BorderThickness="3" FontFamily="Arial" FontSize="20"/>
+            <Button  Content="%" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="20" Cursor="Hand"/>
+            <Button  Content="C" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="20" Cursor="Hand"/>
+            <Button  Content="CE" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="20" Cursor="Hand"/>
+            <Button  Content="←" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
+            <Button  Content="1/x" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="20" Cursor="Hand"/>
+            <Button  Content="x²" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="20" Cursor="Hand"/>
+            <Button  Content="√x" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="20" Cursor="Hand"/>
+            <Button  Content="÷" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
+            <Button  Content="7" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="8" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="9" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="×" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
+            <Button  Content="4" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="5" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="6" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="-" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
+            <Button  Content="1" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="2" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="3" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="+" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
+            <Button  Content="+/-" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
+            <Button  Content="0" Background="DarkGray" Foreground="Black" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="24" Cursor="Hand"/>
+            <Button  Content="," Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
+            <Button  Content="=" Background="DimGray" Foreground="LightYellow" BorderBrush="CadetBlue" Padding="10" BorderThickness="2" FontFamily="Arial" FontSize="28" Cursor="Hand"/>
         </UniformGrid>
     </Grid>
 </Window>
